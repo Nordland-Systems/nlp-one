@@ -1,0 +1,13 @@
+/*
+Theme Name: NLP One
+Author: SP Universe
+Author URI: https://sp-universe.com
+Description: The first version of a theme for nordland-park
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.0
+*/
+ 
+body {
+    background: #21759b;
+}

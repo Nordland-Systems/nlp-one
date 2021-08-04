@@ -1,3 +1,4 @@
+<?php
 function themename_custom_logo_setup() {
     $defaults = array(
         'height'               => 100,

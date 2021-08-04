@@ -2,5 +2,4 @@
 <h1>FOOTER</h1>
 </div>
 </div>
-</body>
-</html>
+<?php wp_footer(); ?>

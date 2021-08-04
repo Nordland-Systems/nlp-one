@@ -4,9 +4,16 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <title><?php wp_title( '|', true, 'right' ); ?></title>
         <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
-        <?php wp_head(); ?>
+        <link href="/./screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/./print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link href="/./ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        
     </head>
     <body>
+    <?php wp_head(); ?>
+        <?php wp_footer(); ?>
         <?php get_header(); ?>
         <!--HEADER-->
         <h1><?php bloginfo( 'name' ); ?></h1>

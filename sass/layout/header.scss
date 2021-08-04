@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    .header_logo{
+        padding-left: 40px;
+        width: 20%;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .topnav{
+        background-color: #897E0F;
+        width: 50%;
+        border-radius: 5px;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                border-right: 2px solid white;
+                &:last-of-type{
+                    border-right: none;
+                }
+            }
+
+            li{
+                padding: 5px 15px;
+                
+                width: auto;
+                display: block;
+                color: white;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}

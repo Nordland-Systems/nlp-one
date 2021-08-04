@@ -11,11 +11,11 @@ Version: 1.0
 @import "compass";
 @import "compass/reset";
 
+@import "typography";
+@import "variables";
+
 @import "layout/header";
 
-.header{
-    background-color: red;
-    h1{
-        color: green;
-    }
+body{
+    background-color: white;
 }

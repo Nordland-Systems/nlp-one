@@ -1,12 +1,7 @@
-/*
-Theme Name: NLP One
-Author: SP Universe
-Author URI: https://sp-universe.com
-Description: The first version of a theme for nordland-park
-Requires at least: 4.9.6
-Requires PHP: 5.2.4
-Version: 1.0
-*/
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,80 +65,4 @@ a img {
 /* line 116, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
-}
-
-/* line 1, sass/typography.scss */
-body {
-  font-size: 20px;
-}
-
-/* line 5, sass/typography.scss */
-p {
-  font-size: 22px;
-}
-
-/* line 9, sass/typography.scss */
-h1 {
-  font-size: 30px;
-}
-
-/* line 13, sass/typography.scss */
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* line 1, sass/layout/header.scss */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 40px;
-}
-/* line 7, sass/layout/header.scss */
-.header .header_logo {
-  padding-left: 40px;
-  width: 20%;
-}
-/* line 10, sass/layout/header.scss */
-.header .header_logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/* line 17, sass/layout/header.scss */
-.header .topnav {
-  background-color: #897E0F;
-  width: 50%;
-  border-radius: 5px;
-}
-/* line 22, sass/layout/header.scss */
-.header .topnav ul {
-  display: flex;
-  justify-content: space-between;
-}
-/* line 26, sass/layout/header.scss */
-.header .topnav ul a {
-  border-right: 2px solid white;
-}
-/* line 28, sass/layout/header.scss */
-.header .topnav ul a:last-of-type {
-  border-right: none;
-}
-/* line 33, sass/layout/header.scss */
-.header .topnav ul li {
-  padding: 5px 15px;
-  width: auto;
-  display: block;
-  color: white;
-}
-/* line 39, sass/layout/header.scss */
-.header .topnav ul li:hover {
-  background-color: white;
-  color: black;
-}
-
-/* line 19, sass/style.scss */
-body {
-  background-color: white;
 }

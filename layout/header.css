@@ -1,0 +1,49 @@
+/* line 1, ../sass/layout/header.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+/* line 7, ../sass/layout/header.scss */
+.header .header_logo {
+  padding-left: 40px;
+  width: 20%;
+}
+/* line 10, ../sass/layout/header.scss */
+.header .header_logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 17, ../sass/layout/header.scss */
+.header .topnav {
+  background-color: #897E0F;
+  width: 50%;
+  border-radius: 5px;
+}
+/* line 22, ../sass/layout/header.scss */
+.header .topnav ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 26, ../sass/layout/header.scss */
+.header .topnav ul a {
+  border-right: 2px solid white;
+}
+/* line 28, ../sass/layout/header.scss */
+.header .topnav ul a:last-of-type {
+  border-right: none;
+}
+/* line 33, ../sass/layout/header.scss */
+.header .topnav ul li {
+  padding: 5px 15px;
+  width: auto;
+  display: block;
+  color: white;
+}
+/* line 39, ../sass/layout/header.scss */
+.header .topnav ul li:hover {
+  background-color: white;
+  color: black;
+}

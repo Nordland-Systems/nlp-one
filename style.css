@@ -7,7 +7,6 @@ Requires at least: 4.9.6
 Requires PHP: 5.2.4
 Version: 1.0
 */
-/* line 5, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,121 +28,401 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 1, sass/typography.scss */
 body {
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 }
 
-/* line 5, sass/typography.scss */
 p {
   font-size: 22px;
 }
 
-/* line 9, sass/typography.scss */
 h1 {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 600;
 }
 
-/* line 13, sass/typography.scss */
 a {
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 1, sass/layout/header.scss */
-.header {
+.topbar {
+  width: 100%;
+  background-color: #1C1C1C;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 40px;
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-left: auto;
+  height: 30px;
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 90;
 }
-/* line 7, sass/layout/header.scss */
-.header .header_logo {
-  padding-left: 40px;
-  width: 20%;
-}
-/* line 10, sass/layout/header.scss */
-.header .header_logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/* line 17, sass/layout/header.scss */
-.header .topnav {
-  background-color: #897E0F;
-  width: 50%;
-  border-radius: 5px;
-}
-/* line 22, sass/layout/header.scss */
-.header .topnav ul {
+.topbar .topbar_menu ul {
   display: flex;
   justify-content: space-between;
 }
-/* line 26, sass/layout/header.scss */
-.header .topnav ul a {
-  border-right: 2px solid white;
+.topbar .topbar_menu ul li {
+  display: block;
 }
-/* line 28, sass/layout/header.scss */
-.header .topnav ul a:last-of-type {
-  border-right: none;
+.topbar .topbar_menu ul li a {
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 15px;
+  color: white;
+  display: block;
 }
-/* line 33, sass/layout/header.scss */
-.header .topnav ul li {
-  padding: 5px 15px;
+.topbar .topbar_menu ul li:hover {
+  background-color: #897E0F;
+}
+.topbar .topbar_menu ul li ul {
+  display: none;
+}
+.topbar .topbar_socials {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 20px;
+}
+.topbar .topbar_socials a .social_button {
+  width: auto;
+  height: 100%;
+}
+.topbar .topbar_logo {
+  height: 20px;
+}
+.topbar .topbar_logo img {
+  width: auto;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .topbar {
+    display: none;
+  }
+}
+
+.mainbar {
+  height: 100px;
+  transition: height 0.2s;
+  width: 100%;
+  margin-bottom: -100px;
+  transition: margin-bottom 0.1s;
+  position: relative;
+  pointer-events: none;
+  top: -10px;
+  z-index: 100;
+}
+.mainbar .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1400px;
+}
+.mainbar .header .header_logo {
+  padding-top: 10px;
+  height: 100px;
+  transition: height 0.2s;
+  pointer-events: auto;
+}
+.mainbar .header .header_logo img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+.mainbar .header .main_menu {
+  background-color: #897E0F;
+  flex: 1 1 80%;
+  border-radius: 10px;
+  pointer-events: auto;
+}
+.mainbar .header .main_menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.mainbar .header .main_menu ul li {
+  flex: 1 1 100%;
+  border-right: 1px solid white;
+  text-align: center;
   width: auto;
   display: block;
   color: white;
 }
-/* line 39, sass/layout/header.scss */
-.header .topnav ul li:hover {
-  background-color: white;
+.mainbar .header .main_menu ul li a {
+  padding: 5px 0px;
+  color: inherit;
+  width: 100%;
+  display: block;
+}
+.mainbar .header .main_menu ul li a:hover {
   color: black;
 }
+.mainbar .header .main_menu ul li:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.mainbar .header .main_menu ul li:hover:last-of-type {
+  border-radius: 0 10px 10px 0;
+}
+.mainbar .header .main_menu ul li:hover:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+.mainbar .header .main_menu ul li:last-of-type {
+  border-right: none;
+}
+.mainbar .header .main_menu ul li ul {
+  display: none;
+}
+.mainbar.sticky {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0px;
+  height: 50px;
+  transition: height 0.2s;
+}
+.mainbar.sticky .header {
+  padding-top: 5px;
+  width: 90%;
+}
+.mainbar.sticky .header .header_logo {
+  padding-top: 0px;
+  height: 40px;
+  transition: height 0.2s;
+}
+.mainbar.sticky .header .header_logo img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+@media (max-width: 500px) {
+  .mainbar {
+    backdrop-filter: blur(5px);
+    background-color: #1C1C1C;
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    transition: height 0.2s;
+  }
+  .mainbar .mobile_menu_button {
+    pointer-events: auto;
+    position: fixed;
+    right: 15px;
+    top: 3px;
+  }
+  .mainbar .mobile_menu_button .bar1, .mainbar .mobile_menu_button .bar2, .mainbar .mobile_menu_button .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .mainbar .mobile_menu_button.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+    transform: rotate(-45deg) translate(-8px, 4px);
+  }
+  .mainbar .mobile_menu_button.change .bar2 {
+    opacity: 0;
+  }
+  .mainbar .mobile_menu_button.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -5px);
+    transform: rotate(45deg) translate(-8px, -5px);
+  }
+  .mainbar .header {
+    padding-top: 5px;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .mainbar .header .header_logo {
+    padding-top: 0px;
+    height: 30px;
+    transition: width 0.2s;
+  }
+  .mainbar .header .header_logo img {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  .mainbar .header .main_menu {
+    display: none;
+  }
+  .mainbar.sticky {
+    backdrop-filter: blur(5px);
+    background-color: #1C1C1C;
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    transition: height 0.2s;
+  }
+  .mainbar.sticky .header {
+    padding-top: 5px;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .mainbar.sticky .header .header_logo {
+    padding-top: 0px;
+    height: 30px;
+    transition: width 0.2s;
+  }
+  .mainbar.sticky .header .header_logo img {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+}
 
-/* line 19, sass/style.scss */
+.mobile_menu_container {
+  display: none;
+  transition: 0.5s;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .mobile_menu_container {
+    display: block;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 100;
+    transition: 0.5s;
+  }
+  .mobile_menu_container .mobile_menu ul {
+    background-color: rgba(28, 28, 28, 0.8);
+    text-decoration: none;
+  }
+  .mobile_menu_container .mobile_menu ul li {
+    padding-left: 10px;
+    align-items: center;
+    border-bottom: 1px solid white;
+  }
+  .mobile_menu_container .mobile_menu ul li a {
+    padding-top: 20px;
+    padding: 15px 5px;
+    display: block;
+    color: white;
+    width: 100%;
+  }
+  .mobile_menu_container .social_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgba(28, 28, 28, 0.8);
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .mobile_menu_container .social_buttons a {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .mobile_menu_container .social_buttons a .social_button {
+    width: 100%;
+  }
+  .mobile_menu_container .social_buttons a .social_button img {
+    width: 100%;
+  }
+  .mobile_menu_container.open {
+    height: auto;
+    transition: 0.5s;
+  }
+}
+
+.footer {
+  background-color: #897E0F;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.footer .footer_icon {
+  position: relative;
+  margin: 0 auto;
+  top: -50px;
+  width: 50%;
+  max-width: 200px;
+}
+.footer .footer_icon img {
+  width: 100%;
+  height: auto;
+}
+.footer .footer_menu_container {
+  position: relative;
+  top: -20px;
+  color: white;
+  text-align: center;
+}
+.footer .footer_menu_container .footer_menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer_menu_container .footer_menu ul li {
+  margin: 0 10px;
+}
+.footer .footer_menu_container .footer_menu ul li a {
+  color: white;
+}
+
+.single_page {
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  min-height: 65%;
+}
+.single_page .single_page_title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   background-color: white;
+  height: 100%;
 }

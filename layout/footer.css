@@ -1,19 +1,17 @@
 /*
-Error: Undefined variable: "$colorDarkGray".
-        on line 4 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss
+Error: Undefined variable: "$colorDarkYellow".
+        on line 2 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss
 
-1: 
-2: .topbar{
-3:     width: 100%;
-4:     background-color: $colorDarkGray;
-5:     display: flex;
-6:     align-items: center;
-7:     justify-content: flex-end;
-8:     margin-right: 0;
-9:     margin-left: auto;
+1: .footer{
+2:     background-color: $colorDarkYellow;
+3:     margin: 0;
+4:     padding-bottom: 10px;
+5:     .footer_icon{
+6:         position: relative;
+7:         margin: 0 auto;
 
 Backtrace:
-F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss:4
+F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss:2
 E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -62,4 +60,4 @@ E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorDarkGray\".\A         on line 4 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss\A \A 1: \A 2: .topbar{\A 3:     width: 100%;\A 4:     background-color: $colorDarkGray;\A 5:     display: flex;\A 6:     align-items: center;\A 7:     justify-content: flex-end;\A 8:     margin-right: 0;\A 9:     margin-left: auto;"; }
+  content: "Error: Undefined variable: \"$colorDarkYellow\".\A         on line 2 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss\A \A 1: .footer{\A 2:     background-color: $colorDarkYellow;\A 3:     margin: 0;\A 4:     padding-bottom: 10px;\A 5:     .footer_icon{\A 6:         position: relative;\A 7:         margin: 0 auto;"; }

@@ -29,20 +29,21 @@
 }
 /* line 26, ../../sass/layout/header.scss */
 .header .topnav ul a {
-  border-right: 2px solid white;
+  border-right: 2px solid red;
+  padding-top: 100px;
 }
-/* line 28, ../../sass/layout/header.scss */
+/* line 29, ../../sass/layout/header.scss */
 .header .topnav ul a:last-of-type {
   border-right: none;
 }
-/* line 33, ../../sass/layout/header.scss */
+/* line 34, ../../sass/layout/header.scss */
 .header .topnav ul li {
   padding: 5px 15px;
   width: auto;
   display: block;
   color: white;
 }
-/* line 39, ../../sass/layout/header.scss */
+/* line 40, ../../sass/layout/header.scss */
 .header .topnav ul li:hover {
   background-color: white;
   color: black;

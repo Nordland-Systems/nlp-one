@@ -1,0 +1,12 @@
+.single_page {
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  min-height: 65%;
+}
+.single_page .single_page_title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,10 +1,54 @@
-body{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Regular.woff) format("woff"),
+        url(fonts/Metropolis-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-p{
-    font-size: 22px;
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-RegularItalic.woff) format("woff"),
+    url(fonts/Metropolis-RegularItalic.otf) format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Thin.woff) format("woff"),
+    url(fonts/Metropolis-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-ThinItalic.woff) format("woff"),
+    url(fonts/Metropolis-ThinItalic.otf) format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Bold.woff) format("woff"),
+    url(fonts/Metropolis-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-BoldItalic.woff) format("woff"),
+    url(fonts/Metropolis-BoldItalic.otf) format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Metropolis', sans-serif;
+    font-size: 16px;
 }
 
 h1{

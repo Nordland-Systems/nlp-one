@@ -2,11 +2,16 @@ $breakpoint-desktop: 1200px;
 $breakpoint-tablet: 768px;
 $breakpoint-phone: 500px;
 
-$colorYellow: #BBAC14;
-$colorDarkYellow: #897E0F;
-$colorDarkYellowTrans: rgba($colorDarkYellow, 0.8);
+$colorPrimary: #1B9CE5;
+$colorPrimaryDark: #093F5F;
+$colorPrimaryLight: #6CDAEE;
+
+$colorSecondary: #F79E02;
+
 $colorDarkGray: #1C1C1C;
 $colorDarkGrayTrans: rgba($colorDarkGray, 0.8);
 
 $colorWhite: #FFFFFF;
 $colorLightGray: #C4C4C4;
+
+$maxwidth: 1200px;

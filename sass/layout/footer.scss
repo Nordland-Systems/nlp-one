@@ -1,7 +1,10 @@
 .footer{
-    background-color: $colorDarkYellow;
+    background-color: $colorPrimaryDark;
     margin: 0;
     padding-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     .footer_icon{
         position: relative;
         margin: 0 auto;
@@ -17,6 +20,7 @@
     .footer_menu_container{
         position: relative;
         top: -20px;
+        left: 0;
         color: white;
         text-align: center;
         

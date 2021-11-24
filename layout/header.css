@@ -1,15 +1,15 @@
 /*
-Error: Undefined variable: "$colorDarkGray".
+Error: Undefined variable: "$colorPrimaryDark".
         on line 4 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss
 
 1: 
 2: .topbar{
 3:     width: 100%;
-4:     background-color: $colorDarkGray;
+4:     background-color: $colorPrimaryDark;
 5:     display: flex;
 6:     align-items: center;
 7:     justify-content: flex-end;
-8:     margin-right: 0;
+8:     margin-right: 0px;
 9:     margin-left: auto;
 
 Backtrace:
@@ -62,4 +62,4 @@ E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorDarkGray\".\A         on line 4 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss\A \A 1: \A 2: .topbar{\A 3:     width: 100%;\A 4:     background-color: $colorDarkGray;\A 5:     display: flex;\A 6:     align-items: center;\A 7:     justify-content: flex-end;\A 8:     margin-right: 0;\A 9:     margin-left: auto;"; }
+  content: "Error: Undefined variable: \"$colorPrimaryDark\".\A         on line 4 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/header.scss\A \A 1: \A 2: .topbar{\A 3:     width: 100%;\A 4:     background-color: $colorPrimaryDark;\A 5:     display: flex;\A 6:     align-items: center;\A 7:     justify-content: flex-end;\A 8:     margin-right: 0px;\A 9:     margin-left: auto;"; }

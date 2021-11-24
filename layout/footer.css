@@ -1,14 +1,14 @@
 /*
-Error: Undefined variable: "$colorDarkYellow".
+Error: Undefined variable: "$colorPrimaryDark".
         on line 2 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss
 
 1: .footer{
-2:     background-color: $colorDarkYellow;
+2:     background-color: $colorPrimaryDark;
 3:     margin: 0;
 4:     padding-bottom: 10px;
-5:     .footer_icon{
-6:         position: relative;
-7:         margin: 0 auto;
+5:     position: absolute;
+6:     width: 100%;
+7:     bottom: 0;
 
 Backtrace:
 F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss:2
@@ -60,4 +60,4 @@ E:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorDarkYellow\".\A         on line 2 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss\A \A 1: .footer{\A 2:     background-color: $colorDarkYellow;\A 3:     margin: 0;\A 4:     padding-bottom: 10px;\A 5:     .footer_icon{\A 6:         position: relative;\A 7:         margin: 0 auto;"; }
+  content: "Error: Undefined variable: \"$colorPrimaryDark\".\A         on line 2 of F:/Programme/XAMPP/htdocs/nlp/wp-content/themes/nlp-one/sass/layout/footer.scss\A \A 1: .footer{\A 2:     background-color: $colorPrimaryDark;\A 3:     margin: 0;\A 4:     padding-bottom: 10px;\A 5:     position: absolute;\A 6:     width: 100%;\A 7:     bottom: 0;"; }

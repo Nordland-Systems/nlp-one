@@ -63,13 +63,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-Regular.woff) format("woff"), url(fonts/Metropolis-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-p {
-  font-size: 22px;
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-RegularItalic.woff) format("woff"), url(fonts/Metropolis-RegularItalic.otf) format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-Thin.woff) format("woff"), url(fonts/Metropolis-Thin.otf) format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-ThinItalic.woff) format("woff"), url(fonts/Metropolis-ThinItalic.otf) format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-Bold.woff) format("woff"), url(fonts/Metropolis-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Metropolis;
+  src: url(fonts/Metropolis-BoldItalic.woff) format("woff"), url(fonts/Metropolis-BoldItalic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+body {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 16px;
 }
 
 h1 {
@@ -84,16 +116,19 @@ a {
 
 .topbar {
   width: 100%;
-  background-color: #1C1C1C;
+  background-color: #093F5F;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 0;
+  margin-right: 0px;
   margin-left: auto;
   height: 30px;
   margin-bottom: -10px;
   position: relative;
   z-index: 90;
+}
+.topbar .topbar_menu {
+  padding-right: 10px;
 }
 .topbar .topbar_menu ul {
   display: flex;
@@ -110,7 +145,7 @@ a {
   display: block;
 }
 .topbar .topbar_menu ul li:hover {
-  background-color: #897E0F;
+  background-color: #F79E02;
 }
 .topbar .topbar_menu ul li ul {
   display: none;
@@ -119,7 +154,7 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 15px;
   height: 20px;
 }
 .topbar .topbar_socials a .social_button {
@@ -128,10 +163,15 @@ a {
 }
 .topbar .topbar_logo {
   height: 20px;
+  width: 10px;
+  padding-right: 35px;
 }
-.topbar .topbar_logo img {
+.topbar .topbar_logo a svg {
   width: auto;
   height: 100%;
+}
+.topbar .topbar_logo a:hover svg path {
+  fill: #F79E02;
 }
 @media (max-width: 500px) {
   .topbar {
@@ -171,7 +211,7 @@ a {
   width: auto;
 }
 .mainbar .header .main_menu {
-  background-color: #897E0F;
+  background-color: #1B9CE5;
   flex: 1 1 80%;
   border-radius: 10px;
   pointer-events: auto;
@@ -194,12 +234,8 @@ a {
   width: 100%;
   display: block;
 }
-.mainbar .header .main_menu ul li a:hover {
-  color: black;
-}
 .mainbar .header .main_menu ul li:hover {
-  background-color: white;
-  color: black;
+  background-color: #F79E02;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .mainbar .header .main_menu ul li:hover:last-of-type {
@@ -238,7 +274,7 @@ a {
 }
 @media (max-width: 500px) {
   .mainbar {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     background-color: #1C1C1C;
     position: fixed;
     top: 0px;
@@ -331,6 +367,7 @@ a {
     transition: 0.5s;
   }
   .mobile_menu_container .mobile_menu ul {
+    backdrop-filter: blur(5px);
     background-color: rgba(28, 28, 28, 0.8);
     text-decoration: none;
   }
@@ -351,6 +388,7 @@ a {
     justify-content: center;
     flex-wrap: nowrap;
     background-color: rgba(28, 28, 28, 0.8);
+    backdrop-filter: blur(5px);
     width: 100%;
     padding: 20px 0px;
   }
@@ -372,9 +410,12 @@ a {
 }
 
 .footer {
-  background-color: #897E0F;
+  background-color: #093F5F;
   margin: 0;
   padding-bottom: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .footer .footer_icon {
   position: relative;
@@ -390,6 +431,7 @@ a {
 .footer .footer_menu_container {
   position: relative;
   top: -20px;
+  left: 0;
   color: white;
   text-align: center;
 }
@@ -409,8 +451,9 @@ a {
   margin: 0 auto;
   margin-top: 150px;
   margin-bottom: 60px;
-  max-width: 1000px;
+  max-width: 1200px;
   min-height: 65%;
+  padding: 0 20px;
 }
 .single_page .single_page_title {
   margin: 0 auto;
@@ -424,5 +467,7 @@ html {
 
 body {
   background-color: white;
-  height: 100%;
+  min-height: calc(100% - 130px);
+  position: relative;
+  padding-bottom: 130px;
 }
